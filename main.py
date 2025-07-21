@@ -31,7 +31,7 @@ async def add_order(message: types.Message):
     keyboard = InlineKeyboardMarkup().add(
         InlineKeyboardButton("✅ Прийняти", callback_data=f"accept_{order_id}")
     )
-    await bot.send_message(chat_id='@leadelectric_bot', text=f"🔧 ЗАМОВЛЕННЯ #{order_id}
+    await bot.send_message(chat_id='@electronservise', text=f"🔧 ЗАМОВЛЕННЯ #{order_id}
 {text}", reply_markup=keyboard)
 
 # Прийняття замовлення
